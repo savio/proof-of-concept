@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Prova de Conceito</title>
+
+
+  <script type='text/javascript' src='/indhio-freemarker/dwr/engine.js'></script>
+  <script type='text/javascript' src='/indhio-freemarker/dwr/interface/SendEmailAjax.js'></script>
+  <script type='text/javascript' src='/indhio-freemarker/dwr/util.js'></script>
+
+<script type="text/javascript">
+	// dwr.engine.setActiveReverseAjax(true);
+
+	function test() {
+		SendEmailAjax.test();
+  	}
+
+  	function sendEmail(email, assunto, conteudo) {
+  		SendEmailAjax.sendEmail(email, assunto, conteudo);
+  	}
+  	var email = "indhio@gmail.com";
+	var assunto = "[INDHIO_COM] - TESTE DE E-MAIL COM FREEMARKER";
+	function sendEmail_UC1() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+
+	function sendEmail_UC2() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+	
+	function sendEmail_UC3() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+	
+	function sendEmail_UC4() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+	
+	function sendEmail_UC5() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+	
+	function sendEmail_UC6() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+	
+	function sendEmail_UC7() {
+		var conteudo = "Este é um conteúdo do UC 1";
+		sendEmail(email, assunto, conteudo);
+	}
+</script>
+
+</head>
+<body>
+
+<p>
+	<input type="button" value="Teste de E-mail com templates UC 1" onclick="sendEmail_UC1();"><br>
+	<input type="button" value="Teste de E-mail com templates UC 2" onclick="sendEmail_UC2();"><br>
+	<input type="button" value="Teste de E-mail com templates UC 3" onclick="sendEmail_UC3();"><br>
+	<input type="button" value="Teste de E-mail com templates UC 4" onclick="sendEmail_UC4();"><br>
+	<input type="button" value="Teste de E-mail com templates UC 5" onclick="sendEmail_UC5();"><br>
+	<input type="button" value="Teste de E-mail com templates UC 6" onclick="sendEmail_UC6();"><br>
+	<input type="button" value="Teste de E-mail com templates UC 7" onclick="sendEmail_UC7();"><br>
+	
+</p>
+
+</body>
+</html>

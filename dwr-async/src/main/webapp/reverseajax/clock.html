@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>Server Side Reverse Ajax Clock</title>
+	  	<script type='text/javascript' src='../dwr/engine.js'> </script>
+        <script type='text/javascript' src='../dwr/interface/Clock.js'></script>
+	  	<script type='text/javascript' src='../dwr/util.js'> </script>
+	  	
+        <script>
+            window.onload = function(){
+                dwr.engine.setActiveReverseAjax(true);
+                dwr.engine.setErrorHandler(errorHandler);
+                dwr.engine.setPollStatusHandler(updatePollStatus);
+                updatePollStatus(true);
+				Clock.setClockStatus();
+            }
+            
+            function errorHandler(message, ex){
+                dwr.util.setValue("error", "<font color='red'>Cannot connect to server. Initializing retry logic.</font>", {
+                    escapeHtml: false
+                });
+                setTimeout(function(){
+                    dwr.util.setValue("error", "");
+                }, 5000)
+            }
+            
+            function updatePollStatus(pollStatus){
+                dwr.util.setValue("pollStatus", pollStatus ? "<font color='green'>Online</font>" : "<font color='red'>Offline</font>", {
+                    escapeHtml: false
+                });
+            }
+            
+            function enableUpdates(enabled){
+                if (!enabled) {
+                    dwr.util.setValue("clockDisplay", "This tab/window does not have updates enabled.");
+                }
+                Clock.setEnabledAttribute(enabled);
+            }
+            
+            function setClockStatus(clockStatus){
+                dwr.util.setValue("clockStatus", clockStatus ? "Clock started" : "Clock stopped");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Server Side Reverse Ajax Clock</h1>
+        <p>
+           Criando um relógio em uma página web é fácil, mas o que dizer de um relógio controlado pelo servidor? Esta demonstração mostra como usar usar um segmento separado do lado do servidor para controlar uma série de browsers.
+        </p>
+        <div id="tabContents">
+            <div id="demoDiv">
+                <input type="button" value="Start / Stop" onclick="Clock.toggle();"/> Situação do servidor: <span id="pollStatus"></span>
+                <div id="error">
+                </div>
+                <p>
+                </p>
+                <h2 id="clockStatus"></h2>
+                <h2 id="clockDisplay"></h2>
+            </div>
+            <div>
+                <h3>Filtrando</h3>
+                <input type="button" value="Enable Updates" onclick="enableUpdates(true);"><input type="button" value="Disable Updates" onclick="enableUpdates(false);">
+            </div>
+            
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <title>DWR Thin Chat Version 2.0</title>
+  <script type='text/javascript' src='../dwr/engine.js'> </script>
+  <script type='text/javascript' src='../dwr/interface/JavaChat.js'> </script>
+  <script type='text/javascript' src='../dwr/util.js'> </script>
+  <script type="text/javascript">
+    function sendMessage() {
+      JavaChat.addMessage(dwr.util.getValue("text"));
+    }
+  </script>
+</head>
+
+<body onload="dwr.engine.setActiveReverseAjax(true);">
+<h1>Java Chat</h1>
+
+<p>Esta é uma demonstração de bate-papo muito simples que usa ajax reverso para coletar mensagens
+e do lado do servidor manipulação de navegador para atualizar as páginas com os resultados.</p>
+
+<div id="tabContents">
+
+  <div id="demoDiv">
+    <p>
+      Sua mensagem:
+      <input id="text" onkeypress="dwr.util.onReturn(event, sendMessage)"/>
+      <input type="button" value="Send" onclick="sendMessage()"/>
+    </p>
+    <hr/>
+    
+    <ul id="chatlog" style="list-style-type:none;">
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

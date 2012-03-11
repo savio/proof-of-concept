@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+
+  <allow>
+
+    <!--
+    <filter class="com.indhio.async.monitor.MonitoringAjaxFilter"/>
+    <filter class="org.directwebremoting.filter.ExtraLatencyAjaxFilter">
+      <param name="delay" value="200"/>
+    </filter>
+    -->
+
+    <!-- intro - for the test on index.html -->
+    <create creator="new">
+      <param name="class" value="com.indhio.async.simple.Intro"/>
+    </create>
+
+    <!-- chat -->
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.reverseajax.JavascriptChat"/>
+    </create>
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.reverseajax.JavaChat"/>
+    </create>
+    <convert converter="bean" match="com.indhio.async.reverseajax.Message"/>
+
+    <!-- clock -->
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.reverseajax.Clock"/>
+    </create>
+    
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.reverseajax.ClockLogging"/>
+    </create>
+    
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.reverseajax.ClockMS"/>
+    </create>
+    
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.reverseajax.PeopleTable"/>
+    </create>
+
+    <!-- people -->
+    <create creator="new" scope="application">
+      <param name="class" value="com.indhio.async.people.People"/>
+    </create>
+    <convert match="com.indhio.async.people.Person" converter="bean"/>
+
+  </allow>
+
+</dwr>

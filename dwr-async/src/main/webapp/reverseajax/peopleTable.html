@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse Ajax Table Update</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <script type='text/javascript' src='../dwr/engine.js'> </script>
+  <script type='text/javascript' src='../dwr/util.js'> </script>
+  <script type='text/javascript' src='../dwr/interface/PeopleTable.js'> </script>
+  <script>
+      window.onload=function()
+      {
+           dwr.engine.setActiveReverseAjax(true);
+		   dwr.engine.setErrorHandler(errorHandler);
+		   dwr.engine.setPollStatusHandler(updatePollStatus);
+		   dwr.engine.setNotifyServerOnPageUnload(true);
+		   updatePollStatus(true);
+           PeopleTable.updateTableDisplay(); 
+ 	       addAttributeToScriptSession();    
+      }
+	  
+	  function errorHandler(message, ex) {
+	    dwr.util.setValue("error", "<font color='red'>Cannot connect to server. Initializing retry logic.</font>", {escapeHtml:false});
+	    setTimeout(function() { dwr.util.setValue("error", ""); }, 5000)
+	  }
+	  
+	  function updatePollStatus(pollStatus) {
+	  	dwr.util.setValue("pollStatus", pollStatus ? "<font color='green'>Online</font>" : "<font color='red'>Offline</font>", {escapeHtml:false});
+	  }
+	  
+	  function addAttributeToScriptSession() {
+	      PeopleTable.addAttributeToScriptSession();
+	      dwr.util.byId("enable").style.display = 'none';
+	      dwr.util.byId("disable").style.display = 'block';
+	  }
+	  
+	  function removeAttributeToScriptSession() {
+	      PeopleTable.removeAttributeToScriptSession();
+	      dwr.util.byId("enable").style.display = 'block';
+	      dwr.util.byId("disable").style.display = 'none';
+	  }
+  </script>
+</head>
+
+<body>
+
+<h1>Reverse Ajax Table Update</h1>
+
+<p>Criação de uma tabela em uma página web é fácil, mas que sobre uma mesa controlada pelo servidor? Esta demonstração mostra como usar um segmento separado lado do servidor para controlar uma série de browsers. Quando as atualizações habilitado será enviado a esta tabela de páginas a cada 10 segundos.</p>
+
+<div id="tabContents">
+  
+  <div id="demoDiv">
+	<div id="error"></div>
+    <input type="button" id="enable" value="Enable page updates" onclick="addAttributeToScriptSession();"/>
+    <input type="button" id="disable" value="Disable page updates" onclick="removeAttributeToScriptSession();"/>
+    <p>Situação do servidor: <span id="pollStatus"></span></p>
+    <table>
+      <thead>
+       <th>Id</th>
+       <th>Nome</th>
+       <th>Endreço</th>
+       <th>Idade</th>
+       <th>Super-herói?</th>
+      </thead>
+      <tbody id="peopleTable"></tbody>
+    </table>    
+  </div>
+    
+</div>
+
+</body>
+</html>
