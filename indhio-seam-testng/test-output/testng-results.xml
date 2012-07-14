@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="575" started-at="2012-07-13T21:29:45Z" finished-at="2012-07-13T21:29:46Z">
+  <suite name="Default suite" duration-ms="686" started-at="2012-07-13T22:09:26Z" finished-at="2012-07-13T22:09:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="575" started-at="2012-07-13T21:29:45Z" finished-at="2012-07-13T21:29:46Z">
+    <test name="Default test" duration-ms="686" started-at="2012-07-13T22:09:26Z" finished-at="2012-07-13T22:09:27Z">
       <class name="com.indhio.testng.test.PerfilTest">
-        <test-method status="PASS" signature="initDatabase()[pri:0, instance:com.indhio.testng.test.PerfilTest@355ccfb1]" name="initDatabase" is-config="true" duration-ms="24" started-at="2012-07-13T21:29:46Z" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="initDatabase()[pri:0, instance:com.indhio.testng.test.PerfilTest@2f6b904d]" name="initDatabase" is-config="true" duration-ms="26" started-at="2012-07-13T22:09:27Z" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- initDatabase -->
-        <test-method status="PASS" signature="insert()[pri:0, instance:com.indhio.testng.test.PerfilTest@355ccfb1]" name="insert" duration-ms="9" started-at="2012-07-13T21:29:46Z" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="insert()[pri:0, instance:com.indhio.testng.test.PerfilTest@2f6b904d]" name="insert" duration-ms="57" started-at="2012-07-13T22:09:27Z" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- insert -->
-        <test-method status="PASS" signature="update()[pri:0, instance:com.indhio.testng.test.PerfilTest@355ccfb1]" name="update" duration-ms="10" started-at="2012-07-13T21:29:46Z" depends-on-methods="com.indhio.testng.test.PerfilTest.insert" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="update()[pri:0, instance:com.indhio.testng.test.PerfilTest@2f6b904d]" name="update" duration-ms="6" started-at="2012-07-13T22:09:27Z" depends-on-methods="com.indhio.testng.test.PerfilTest.insert" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- update -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:com.indhio.testng.test.PerfilTest@355ccfb1]" name="delete" duration-ms="23" started-at="2012-07-13T21:29:46Z" depends-on-methods="com.indhio.testng.test.PerfilTest.update" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="delete()[pri:0, instance:com.indhio.testng.test.PerfilTest@2f6b904d]" name="delete" duration-ms="12" started-at="2012-07-13T22:09:27Z" depends-on-methods="com.indhio.testng.test.PerfilTest.update" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- delete -->
       </class> <!-- com.indhio.testng.test.PerfilTest -->
       <class name="com.indhio.testng.test.GrupoTest">
-        <test-method status="PASS" signature="initDatabase()[pri:0, instance:com.indhio.testng.test.GrupoTest@5d185844]" name="initDatabase" is-config="true" duration-ms="142" started-at="2012-07-13T21:29:45Z" finished-at="2012-07-13T21:29:45Z">
+        <test-method status="PASS" signature="initDatabase()[pri:0, instance:com.indhio.testng.test.GrupoTest@55127b52]" name="initDatabase" is-config="true" duration-ms="26" started-at="2012-07-13T22:09:27Z" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- initDatabase -->
-        <test-method status="PASS" signature="insert()[pri:0, instance:com.indhio.testng.test.GrupoTest@5d185844]" name="insert" duration-ms="254" started-at="2012-07-13T21:29:45Z" finished-at="2012-07-13T21:29:45Z">
+        <test-method status="PASS" signature="insert()[pri:0, instance:com.indhio.testng.test.GrupoTest@55127b52]" name="insert" duration-ms="9" started-at="2012-07-13T22:09:27Z" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- insert -->
-        <test-method status="PASS" signature="update()[pri:0, instance:com.indhio.testng.test.GrupoTest@5d185844]" name="update" duration-ms="10" started-at="2012-07-13T21:29:46Z" depends-on-methods="com.indhio.testng.test.GrupoTest.insert" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="update()[pri:0, instance:com.indhio.testng.test.GrupoTest@55127b52]" name="update" duration-ms="5" started-at="2012-07-13T22:09:27Z" depends-on-methods="com.indhio.testng.test.GrupoTest.insert" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- update -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:com.indhio.testng.test.GrupoTest@5d185844]" name="delete" duration-ms="22" started-at="2012-07-13T21:29:46Z" depends-on-methods="com.indhio.testng.test.GrupoTest.update" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="delete()[pri:0, instance:com.indhio.testng.test.GrupoTest@55127b52]" name="delete" duration-ms="7" started-at="2012-07-13T22:09:27Z" depends-on-methods="com.indhio.testng.test.GrupoTest.update" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- delete -->
       </class> <!-- com.indhio.testng.test.GrupoTest -->
       <class name="com.indhio.testng.test.UsuarioTest">
-        <test-method status="PASS" signature="initDatabase()[pri:0, instance:com.indhio.testng.test.UsuarioTest@1710278e]" name="initDatabase" is-config="true" duration-ms="28" started-at="2012-07-13T21:29:45Z" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="initDatabase()[pri:0, instance:com.indhio.testng.test.UsuarioTest@f27461b]" name="initDatabase" is-config="true" duration-ms="129" started-at="2012-07-13T22:09:26Z" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- initDatabase -->
-        <test-method status="PASS" signature="insert()[pri:0, instance:com.indhio.testng.test.UsuarioTest@1710278e]" name="insert" duration-ms="9" started-at="2012-07-13T21:29:46Z" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="insert()[pri:0, instance:com.indhio.testng.test.UsuarioTest@f27461b]" name="insert" duration-ms="331" started-at="2012-07-13T22:09:27Z" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- insert -->
-        <test-method status="PASS" signature="update()[pri:0, instance:com.indhio.testng.test.UsuarioTest@1710278e]" name="update" duration-ms="7" started-at="2012-07-13T21:29:46Z" depends-on-methods="com.indhio.testng.test.UsuarioTest.insert" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="update()[pri:0, instance:com.indhio.testng.test.UsuarioTest@f27461b]" name="update" duration-ms="11" started-at="2012-07-13T22:09:27Z" depends-on-methods="com.indhio.testng.test.UsuarioTest.insert" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- update -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:com.indhio.testng.test.UsuarioTest@1710278e]" name="delete" duration-ms="7" started-at="2012-07-13T21:29:46Z" depends-on-methods="com.indhio.testng.test.UsuarioTest.update" finished-at="2012-07-13T21:29:46Z">
+        <test-method status="PASS" signature="delete()[pri:0, instance:com.indhio.testng.test.UsuarioTest@f27461b]" name="delete" duration-ms="14" started-at="2012-07-13T22:09:27Z" depends-on-methods="com.indhio.testng.test.UsuarioTest.update" finished-at="2012-07-13T22:09:27Z">
         </test-method> <!-- delete -->
       </class> <!-- com.indhio.testng.test.UsuarioTest -->
     </test> <!-- Default test -->
