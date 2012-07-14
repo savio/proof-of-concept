@@ -1,0 +1,46 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite">
+    <groups>
+    </groups>
+    <test name="com.indhio.testng.test.GrupoTest">
+      <class name="com.indhio.testng.test.GrupoTest">
+        <test-method status="PASS" signature="delete()" name="delete" duration-ms="81" started-at="2012-07-13T22:02:03Z" depends-on-methods="com.indhio.testng.test.GrupoTest.update" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="update()" name="update" duration-ms="4" started-at="2012-07-13T22:02:03Z" depends-on-methods="com.indhio.testng.test.GrupoTest.insert" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="initDatabase()" name="initDatabase" is-config="true" duration-ms="19" started-at="2012-07-13T22:02:03Z" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="insert()" name="insert" duration-ms="8" started-at="2012-07-13T22:02:03Z" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="com.indhio.testng.test.PerfilTest">
+      <class name="com.indhio.testng.test.PerfilTest">
+        <test-method status="PASS" signature="delete()" name="delete" duration-ms="13" started-at="2012-07-13T22:02:03Z" depends-on-methods="com.indhio.testng.test.PerfilTest.update" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="insert()" name="insert" duration-ms="473" started-at="2012-07-13T22:02:02Z" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="update()" name="update" duration-ms="9" started-at="2012-07-13T22:02:03Z" depends-on-methods="com.indhio.testng.test.PerfilTest.insert" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="initDatabase()" name="initDatabase" is-config="true" duration-ms="390" started-at="2012-07-13T22:02:02Z" finished-at="2012-07-13T22:02:02Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="com.indhio.testng.test.UsuarioTest">
+      <class name="com.indhio.testng.test.UsuarioTest">
+        <test-method status="PASS" signature="insert()" name="insert" duration-ms="39" started-at="2012-07-13T22:02:03Z" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="initDatabase()" name="initDatabase" is-config="true" duration-ms="24" started-at="2012-07-13T22:02:03Z" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="delete()" name="delete" duration-ms="52" started-at="2012-07-13T22:02:03Z" depends-on-methods="com.indhio.testng.test.UsuarioTest.update" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+        <test-method status="PASS" signature="update()" name="update" duration-ms="21" started-at="2012-07-13T22:02:03Z" depends-on-methods="com.indhio.testng.test.UsuarioTest.insert" finished-at="2012-07-13T22:02:03Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="Command line test">
+    </test>
+  </suite>
+</testng-results>

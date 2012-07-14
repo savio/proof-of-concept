@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.indhio.testng.test.PerfilTest" failures="0" tests="3" time="0.906" errors="0">
+  <properties/>
+  <testcase name="insert" time="0.473" classname="com.indhio.testng.test.PerfilTest"/>
+  <testcase name="update" time="0.0090" classname="com.indhio.testng.test.PerfilTest"/>
+  <testcase name="delete" time="0.013" classname="com.indhio.testng.test.PerfilTest"/>
+</testsuite>

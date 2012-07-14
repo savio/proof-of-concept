@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.indhio.testng.test.GrupoTest" failures="0" tests="3" time="0.114" errors="0">
+  <properties/>
+  <testcase name="insert" time="0.0080" classname="com.indhio.testng.test.GrupoTest"/>
+  <testcase name="update" time="0.0040" classname="com.indhio.testng.test.GrupoTest"/>
+  <testcase name="delete" time="0.081" classname="com.indhio.testng.test.GrupoTest"/>
+</testsuite>

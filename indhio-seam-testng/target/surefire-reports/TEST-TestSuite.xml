@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="4.528" errors="0" skipped="0" tests="9" name="TestSuite">
+  <properties>
+    <property name="sun.lang.ClassLoader.allowArraySyntax" value="true"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
+    <property name="java.vm.version" value="20.8-b03-424"/>
+    <property name="awt.nativeDoubleBuffering" value="true"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="mrj.build" value="11M3720"/>
+    <property name="java.vm.vendor" value="Apple Inc."/>
+    <property name="java.vendor.url" value="http://www.apple.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/indhio/workspace/git/proof-of-concept/indhio-seam-testng"/>
+    <property name="java.runtime.version" value="1.6.0_33-b03-424-11M3720"/>
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/indhio/workspace/git/proof-of-concept/indhio-seam-testng"/>
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/var/folders/yw/pzm9hd3x5xlftbwnwn5pk0xw0000gn/T/surefirebooter612486546093666984.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/yw/pzm9hd3x5xlftbwnwn5pk0xw0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="MacRoman"/>
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="surefire.test.class.path" value="/Users/indhio/workspace/git/proof-of-concept/indhio-seam-testng/target/test-classes:/Users/indhio/workspace/git/proof-of-concept/indhio-seam-testng/target/classes:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate-entitymanager/3.3.2.GA/hibernate-entitymanager-3.3.2.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate/3.2.6.ga/hibernate-3.2.6.ga.jar:/Users/indhio/java/apache-maven-2.2.1/repository/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/indhio/java/apache-maven-2.2.1/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar:/Users/indhio/java/apache-maven-2.2.1/repository/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/indhio/java/apache-maven-2.2.1/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/Users/indhio/java/apache-maven-2.2.1/repository/cglib/cglib/2.1_3/cglib-2.1_3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/asm/asm/1.5.3/asm-1.5.3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate-annotations/3.3.1.GA/hibernate-annotations-3.3.1.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate-commons-annotations/3.0.0.ga/hibernate-commons-annotations-3.0.0.ga.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/ejb3-persistence/1.0.1.GA/ejb3-persistence-1.0.1.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar:/Users/indhio/java/apache-maven-2.2.1/repository/postgresql/postgresql/8.2-504.jdbc4/postgresql-8.2-504.jdbc4.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/jboss/seam/jboss-seam/2.1.1.GA/jboss-seam-2.1.1.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/jboss/el/jboss-el/1.0_02.CR2/jboss-el-1.0_02.CR2.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javax/el/el-api/1.0/el-api-1.0.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/testng/testng/5.8/testng-5.8-jdk15.jar:/Users/indhio/java/apache-maven-2.2.1/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/dbunit/dbunit/2.4.5/dbunit-2.4.5.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.7.4"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/indhio"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="MacRoman"/>
+    <property name="user.name" value="indhio"/>
+    <property name="java.class.path" value="/Users/indhio/workspace/git/proof-of-concept/indhio-seam-testng/target/test-classes:/Users/indhio/workspace/git/proof-of-concept/indhio-seam-testng/target/classes:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate-entitymanager/3.3.2.GA/hibernate-entitymanager-3.3.2.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate/3.2.6.ga/hibernate-3.2.6.ga.jar:/Users/indhio/java/apache-maven-2.2.1/repository/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/indhio/java/apache-maven-2.2.1/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar:/Users/indhio/java/apache-maven-2.2.1/repository/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/indhio/java/apache-maven-2.2.1/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/Users/indhio/java/apache-maven-2.2.1/repository/cglib/cglib/2.1_3/cglib-2.1_3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/asm/asm/1.5.3/asm-1.5.3.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate-annotations/3.3.1.GA/hibernate-annotations-3.3.1.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/hibernate-commons-annotations/3.0.0.ga/hibernate-commons-annotations-3.0.0.ga.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/hibernate/ejb3-persistence/1.0.1.GA/ejb3-persistence-1.0.1.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar:/Users/indhio/java/apache-maven-2.2.1/repository/postgresql/postgresql/8.2-504.jdbc4/postgresql-8.2-504.jdbc4.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/jboss/seam/jboss-seam/2.1.1.GA/jboss-seam-2.1.1.GA.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/jboss/el/jboss-el/1.0_02.CR2/jboss-el-1.0_02.CR2.jar:/Users/indhio/java/apache-maven-2.2.1/repository/javax/el/el-api/1.0/el-api-1.0.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/testng/testng/5.8/testng-5.8-jdk15.jar:/Users/indhio/java/apache-maven-2.2.1/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/dbunit/dbunit/2.4.5/dbunit-2.4.5.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8.jar:/Users/indhio/java/apache-maven-2.2.1/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
+    <property name="sun.java.command" value="/var/folders/yw/pzm9hd3x5xlftbwnwn5pk0xw0000gn/T/surefirebooter612486546093666984.jar /var/folders/yw/pzm9hd3x5xlftbwnwn5pk0xw0000gn/T/surefire1890392790091608490tmp /var/folders/yw/pzm9hd3x5xlftbwnwn5pk0xw0000gn/T/surefire1151127810152361975tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="apple.awt.CToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_33"/>
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"/>
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
+    <property name="java.vendor" value="Apple Inc."/>
+    <property name="localRepository" value="/Users/indhio/java/apache-maven-2.2.1/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="mrj.version" value="1070.1.6.0_33-424"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.484" classname="com.indhio.testng.test.PerfilTest" name="insert"/>
+  <testcase time="0.009" classname="com.indhio.testng.test.PerfilTest" name="update"/>
+  <testcase time="0.013" classname="com.indhio.testng.test.PerfilTest" name="delete"/>
+  <testcase time="0.007" classname="com.indhio.testng.test.GrupoTest" name="insert"/>
+  <testcase time="0.003" classname="com.indhio.testng.test.GrupoTest" name="update"/>
+  <testcase time="0.081" classname="com.indhio.testng.test.GrupoTest" name="delete"/>
+  <testcase time="0.039" classname="com.indhio.testng.test.UsuarioTest" name="insert"/>
+  <testcase time="0.021" classname="com.indhio.testng.test.UsuarioTest" name="update"/>
+  <testcase time="0.052" classname="com.indhio.testng.test.UsuarioTest" name="delete"/>
+</testsuite>
