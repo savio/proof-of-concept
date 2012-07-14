@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.indhio</groupId>
+	<artifactId>testng</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>indhio-seam-test</name>
+	<description>indhio-seam-test</description>
+
+	<repositories>
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<layout>default</layout>
+			<url>http://download.java.net/maven/2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>Central</id>
+			<name>Maven Repository</name>
+			<layout>default</layout>
+			<url>http://repo1.maven.org/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>repository.jboss.com</id>
+			<name>JBoss Repository com</name>
+			<layout>default</layout>
+			<url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>codehaus</id>
+			<name>Maven Codehaus repository</name>
+			<url>http://repository.codehaus.org/</url>
+		</repository>
+		<repository>
+			<id>ibiblio</id>
+			<name>Ibiblio</name>
+			<url>http://mirrors.ibiblio.org/pub/mirrors/maven</url>
+		</repository>
+	</repositories>
+
+	<properties>
+		<java.source.version>1.6</java.source.version>
+		<hibernate.version>3.3.2.GA</hibernate.version>
+		<persistence-api.version>1.0</persistence-api.version>
+		<postgres.version>8.2-504.jdbc4</postgres.version>
+		<dbunit-maven-plugin.version>1.0-beta-3</dbunit-maven-plugin.version>
+		<dbunit.version>2.4.5</dbunit.version>
+		<tesng.version>5.8</tesng.version>
+		<slf4j-simple.version>1.5.8</slf4j-simple.version>
+		<jboss.seam.version>2.1.1.GA</jboss.seam.version>
+	</properties>
+
+	<dependencies>
+		<!-- *************** Build Dependencies *************** -->
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>${persistence-api.version}</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgres.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam</artifactId>
+			<version>${jboss.seam.version}</version>
+		</dependency>
+
+		<!-- *************** Test Dependencies *************** -->
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${tesng.version}</version>
+			<classifier>jdk15</classifier>
+			<scope>test</scope>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.dbunit</groupId>
+			<artifactId>dbunit</artifactId>
+			<version>${dbunit.version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j-simple.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.source.version}</source>
+					<target>${java.source.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<childDelegation>true</childDelegation>
+					<useSystemClassLoader>true</useSystemClassLoader>
+					<argLine>
+						-Dsun.lang.ClassLoader.allowArraySyntax=true
+					</argLine>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>

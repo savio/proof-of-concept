@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.indhio.testng.test.UsuarioTest">
+        <methods>
+          <include name="initDatabase"/>
+        </methods>
+      </class> <!-- com.indhio.testng.test.UsuarioTest -->
+      <class name="com.indhio.testng.test.EmpresaTest">
+        <methods>
+          <include name="delete"/>
+          <include name="insert"/>
+          <include name="initDatabase"/>
+          <include name="update"/>
+        </methods>
+      </class> <!-- com.indhio.testng.test.EmpresaTest -->
+      <class name="com.indhio.testng.test.GrupoTest">
+        <methods>
+          <include name="initDatabase"/>
+        </methods>
+      </class> <!-- com.indhio.testng.test.GrupoTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
