@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_indhio_roo_conference_domain_Speaker" items="${speakers}" z="Mu2YWhGwC63ark3RQ3b0yDi4nsw=">
+        <table:table data="${speakers}" id="l_com_indhio_roo_conference_domain_Speaker" path="/speakers" z="+qeJd3Io4Y2L9T5YUIYmkrQoikc=">
+            <table:column id="c_com_indhio_roo_conference_domain_Speaker_firstname" property="firstname" z="Nc8KRO0yS/bVzubZQ/fNhuR4nTU="/>
+            <table:column id="c_com_indhio_roo_conference_domain_Speaker_lastname" property="lastname" z="cEyJ52dP5qOitNnowiEI8pvyZCA="/>
+            <table:column id="c_com_indhio_roo_conference_domain_Speaker_email" property="email" z="qTNFdruqEmWWQUJT+b6jOv5MIFM="/>
+            <table:column id="c_com_indhio_roo_conference_domain_Speaker_organization" property="organization" z="c4ZAxnbi66Nf/CkDa8W9qwOwGk0="/>
+            <table:column date="true" dateTimePattern="${speaker_birthdate_date_format}" id="c_com_indhio_roo_conference_domain_Speaker_birthdate" property="birthdate" z="WisL7TnzCDdQwMNZ1KNE0mD5kdc="/>
+            <table:column id="c_com_indhio_roo_conference_domain_Speaker_age" property="age" z="3I8ALnuRUs7BJW3uBckbHBOUeVA="/>
+        </table:table>
+    </page:list>
+</div>

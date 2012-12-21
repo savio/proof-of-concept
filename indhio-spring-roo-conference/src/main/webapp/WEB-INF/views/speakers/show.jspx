@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_indhio_roo_conference_domain_Speaker" object="${speaker}" path="/speakers" z="hdUbrFGaMi1rRQVS/2G/g8n6KdU=">
+        <field:display field="firstname" id="s_com_indhio_roo_conference_domain_Speaker_firstname" object="${speaker}" z="JQfQSKwFLauLvGE8eefE60ctTDg="/>
+        <field:display field="lastname" id="s_com_indhio_roo_conference_domain_Speaker_lastname" object="${speaker}" z="hovLDYenGDPB+6ZIcjc5+Gye70Y="/>
+        <field:display field="email" id="s_com_indhio_roo_conference_domain_Speaker_email" object="${speaker}" z="PCd7P3QNtEC8Zx89G1DVbcWPQvY="/>
+        <field:display field="organization" id="s_com_indhio_roo_conference_domain_Speaker_organization" object="${speaker}" z="wsZ0gESLNmf6agkIVvNR6p4mvKM="/>
+        <field:display date="true" dateTimePattern="${speaker_birthdate_date_format}" field="birthdate" id="s_com_indhio_roo_conference_domain_Speaker_birthdate" object="${speaker}" z="tcLJrggS6Lk8r+zElFFyBbx66Z4="/>
+        <field:display field="age" id="s_com_indhio_roo_conference_domain_Speaker_age" object="${speaker}" z="eIKmVPYk3CvhrhRNSraxzoH3WNY="/>
+    </page:show>
+</div>

@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="com.indhio.roo.conference.domain.TalkDataOnDemand_Roo_Configurable"/>
+<aspect name="com.indhio.roo.conference.domain.TalkIntegrationTest_Roo_Configurable"/>
+<aspect name="com.indhio.roo.conference.domain.SpeakerDataOnDemand_Roo_Configurable"/>
+<aspect name="com.indhio.roo.conference.domain.SpeakerIntegrationTest_Roo_Configurable"/>
+<aspect name="com.indhio.roo.conference.domain.TalkDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.indhio.roo.conference.domain.SpeakerIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.indhio.roo.conference.domain.SpeakerDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.indhio.roo.conference.domain.TalkIntegrationTest_Roo_IntegrationTest"/>
+</aspects>
+</aspectj>
+
