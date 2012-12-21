@@ -2,6 +2,7 @@ package com.lilnkdata.pregao.pc.ajax;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import org.directwebremoting.Browser;
 import org.directwebremoting.ScriptSession;
@@ -17,6 +18,10 @@ import com.lilnkdata.pregao.pc.pojo.LoteId;
 import com.lilnkdata.pregao.pc.pojo.Message;
 
 public class SalaDisputaAjax {
+	
+	public Map teste() {
+		return null;
+	}
 
 	public void execute(String loteIdStr) {
 		LoadCache.getInstance(); // Carga Inicial
