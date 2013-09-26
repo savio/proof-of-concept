@@ -20,16 +20,16 @@ public class ClientWS {
 	}
 
 	private static void testCnpjWS() throws MalformedURLException {
-		// URL wsdlLocation = new URL("http://localhost:9000/di-srf-ws-cnpj/?wsdl");
-		URL wsdlLocation = new URL("http://localhost:8080/CTISSRFWS/di-srf-cnpj-ws?wsdl");
+		URL wsdlLocation = new URL("http://localhost:9000/di-srf-ws-cnpj/?wsdl");
+		//URL wsdlLocation = new URL("http://localhost:8080/CTISSRFWS/di-srf-cnpj-ws?wsdl");
 		QName qName = new QName("https://infoconv.receita.fazenda.gov.br/ws/cnpj/", "ConsultarCNPJSoap");
 		ConsultarCNPJ consultarCNPJ = new ConsultarCNPJ(wsdlLocation, qName);
 		consultarCNPJ.getConsultarCNPJSoap().consultarCNPJP1("CNPJ ", "ccccc nnnnn ppppp jjjjjj");
 	}
 
 	private static void testCpfWS() throws MalformedURLException {
-		// URL wsdlLocation = new URL("http://localhost:9000/di-srf-ws-cpf/?wsdl");
-		URL wsdlLocation = new URL("http://localhost:8080/CTISSRFWS/di-srf-cpf-ws?wsdl");
+		URL wsdlLocation = new URL("http://localhost:9000/di-srf-ws-cpf/?wsdl");
+		//URL wsdlLocation = new URL("http://localhost:8080/CTISSRFWS/di-srf-cpf-ws?wsdl");
 		QName qName = new QName("https://infoconv.receita.fazenda.gov.br/ws/cpf/", "ConsultarCPFSoap");
 		ConsultarCPF consultarCPF = new ConsultarCPF(wsdlLocation, qName);
 		consultarCPF.getConsultarCPFSoap().consultarCPFP1("CPF", "cccc ppppp fff ");

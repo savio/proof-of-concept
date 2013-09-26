@@ -1,10 +1,19 @@
 
 package br.gov.receita.fazenda.ws.cnpj;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
+
+import org.hibernate.annotations.Type;
 
 
 /**
@@ -124,8 +133,15 @@ import javax.xml.bind.annotation.XmlType;
     "cnpjSucessora",
     "erro"
 })
+@Entity
+@Table(name="cnpj")
 public class CNPJPerfil3 {
 
+	@XmlTransient
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
     @XmlElement(name = "CNPJ")
     protected String cnpj;
     @XmlElement(name = "Estabelecimento")
@@ -151,6 +167,7 @@ public class CNPJPerfil3 {
     @XmlElement(name = "CNAEPrincipal")
     protected String cnaePrincipal;
     @XmlElement(name = "CNAESecundario")
+    @Type(type="org.hibernate.type.StringType")
     protected ArrayOfString cnaeSecundario;
     @XmlElement(name = "TipoLogradouro")
     protected String tipoLogradouro;
@@ -187,6 +204,7 @@ public class CNPJPerfil3 {
     @XmlElement(name = "CapitalSocial")
     protected String capitalSocial;
     @XmlElement(name = "Sociedade")
+    @Transient
     protected ArrayOfSocio sociedade;
     @XmlElement(name = "TipoCRCContadorPJ")
     protected String tipoCRCContadorPJ;
@@ -219,8 +237,10 @@ public class CNPJPerfil3 {
     @XmlElement(name = "CNPJSucedida")
     protected String cnpjSucedida;
     @XmlElement(name = "CNPJSucessora")
+    @Type(type="org.hibernate.type.StringType")
     protected ArrayOfString cnpjSucessora;
     @XmlElement(name = "Erro")
+    @Transient
     protected String erro;
 
     /**

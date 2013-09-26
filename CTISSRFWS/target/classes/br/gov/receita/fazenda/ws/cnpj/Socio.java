@@ -1,9 +1,15 @@
 
 package br.gov.receita.fazenda.ws.cnpj;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -40,8 +46,14 @@ import javax.xml.bind.annotation.XmlType;
     "codigoPaisOrigem",
     "nomePaisOrigem"
 })
+@Entity
+@Table(name="socio")
 public class Socio {
-
+	@XmlTransient
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
     @XmlElement(name = "Tipo")
     protected String tipo;
     @XmlElement(name = "Nome")
